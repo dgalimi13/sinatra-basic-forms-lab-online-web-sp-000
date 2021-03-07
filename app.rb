@@ -12,7 +12,7 @@ end
 
 post '/puppy' do
   binding.pry
-  @puppy = Puppy.new(params[:name,:breed,:age])
+  @puppy = Puppy.new(params)
   #binding.pry
   erb :display_puppy
 end
