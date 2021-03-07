@@ -11,7 +11,7 @@ erb :create_puppy
 end
 
 post '/puppy' do
-  binding.pry
+  #binding.pry
   
   @puppy = Puppy.new(name,breed,age)
   #binding.pry
