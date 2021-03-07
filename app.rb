@@ -11,7 +11,7 @@ erb :create_puppy
 end
 
 post '/puppy' do 
-  @puppy = Puppy.new
+  @puppy = Puppy.new(params[:user_text])
   erb :display_puppy
 end
 
