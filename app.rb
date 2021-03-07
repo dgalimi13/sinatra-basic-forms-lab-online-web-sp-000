@@ -11,7 +11,7 @@ erb :create_puppy
 end
 
 post '/puppy' do 
-  
+  @puppy
 end
 
 
