@@ -11,9 +11,9 @@ erb :create_puppy
 end
 
 post '/puppy' do
-  
-  @puppy = Puppy.new(params[:user_input])
   binding.pry
+  @puppy = Puppy.new(params[:user_input])
+  #binding.pry
   erb :display_puppy
 end
 
