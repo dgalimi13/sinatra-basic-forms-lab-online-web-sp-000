@@ -10,7 +10,8 @@ get '/new' do
 erb :create_puppy
 end
 
-post '/puppy' do 
+post '/puppy' do
+  
   @puppy = Puppy.new(params[:user_input])
   binding.pry
   erb :display_puppy
